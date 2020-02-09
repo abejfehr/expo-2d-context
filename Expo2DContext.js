@@ -1435,7 +1435,7 @@ export default class Expo2DContext {
     let xformedVectorAxis2 = this._getTransformedPt(0, radius);
     let actualRadiusAxis1 = Math.sqrt(Math.pow(xformedVectorAxis1[0]-xformedOrigin[0],2) + Math.pow(xformedVectorAxis1[1]-xformedOrigin[1],2))
     let actualRadiusAxis2 = Math.sqrt(Math.pow(xformedVectorAxis2[0]-xformedOrigin[0],2) + Math.pow(xformedVectorAxis2[1]-xformedOrigin[1],2))
-    let increment = (1/Math.max(actualRadiusAxis1, actualRadiusAxis2)) * 10.0;
+    let increment = (1/Math.max(actualRadiusAxis1, actualRadiusAxis2)) * 3.0;
     
     if (increment >= Math.abs(startAngle - endAngle)) {
       return;
